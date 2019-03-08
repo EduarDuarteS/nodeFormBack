@@ -30,14 +30,13 @@ function processForm(req, res) {
             fields: fields
         });
 
-        res.end(util.inspect({
-          fields: fields
-        }));
+        res.end(data);
 
         console.log("posted fields:\n");
-        console.log(datautil.inspect({
-          fields: fields
-        }));
+        console.log(data);
+        // console.log(datautil.inspect({
+        //   fields: fields
+        // }));
     });
 }
 
